@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- New logic -->
+
+    <div class="container" id="center">
+      <p class="header">Weight Converter</p>
+
+      <div class="weight-value">
+        <p>
+          Type a value in any of the fields to convert between weight
+          measurements:
+        </p>
+      </div>
+
+      <div class="input-margin in-half">
+        <label for="pond">Pounds</label><br />
+        <input
+          id="inputPounds"
+          class="input-box"
+          type="number"
+          name="pond"
+          placeholder="Pounds"
+          oninput="poundsToother(this.value)"
+          onchange="poundsToother(this.value)"
+         
+        />
+      </div>
+
+      <div class="input-margin in-half">
+        <label for="kilo">Kilograms</label><br />
+        <input
+          id="inputKilograms"
+          class="input-box"
+          type="number"
+          name="kilo"
+          placeholder="Kilograms"
+          oninput="kiloToOther(this.value)"
+          onchange="kiloToOther(this.value)"          
+        />
+      </div>
+      <div class="input-margin in-half">
+        <label for="ounce">Ounces</label><br />
+        <input
+          id="inputOnces"
+          class="input-box"
+          type="number"
+          name="ounce"
+          placeholder="Ounces"
+          oninput="oncesToOther(this.value)"
+          onchange="oncesToOther(this.value)"
+
+        />
+      </div>
+      <div class="input-margin in-half">
+        <label for="gram">Grams</label><br />
+        <input
+          id="inputGrams"
+          class="input-box"
+          type="number"
+          name="gram"
+          placeholder="Grams"
+          oninput="gramsToOther(this.value)"
+          onchange="gramsToOther(this.value)"
+        />
+      </div>
+      <div class="input-margin in-half">
+        <label for="stone">Stones</label><br />
+        <input
+          id="inputStones"
+          class="input-box in-border"
+          type="number"
+          name="stone"
+          placeholder="Stones"
+          oninput="stoneToOther(this.value)"
+          onchange="stoneToOther(this.value)"
+        />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
